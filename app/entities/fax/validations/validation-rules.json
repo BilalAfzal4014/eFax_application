@@ -1,0 +1,57 @@
+[
+  {
+    "name": "name",
+    "required": true,
+    "minLength": 1,
+    "types": [
+      {
+        "exists": false,
+        "dataType": "STRING"
+      }
+    ],
+    "allowedTypes": [
+    ],
+    "unique": false
+  },
+  {
+    "name": "to_phone",
+    "required": true,
+    "regularExpression": "^[+]1[2-9][0-9]{2}[2-9][0-9]{6}$",
+    "types": [
+      {
+        "exists": false,
+        "dataType": "ANY"
+      }
+    ],
+    "allowedTypes": [
+    ],
+    "unique": false
+  },
+  {
+    "name": "file",
+    "required": true,
+    "types": [
+      {
+        "exists": false,
+        "dataType": "FILE_UPLOAD_BUFFER"
+      }
+    ],
+    "allowedTypes": [
+    ],
+    "unique": false
+  },
+  {
+    "name": "callback_url",
+    "required": true,
+    "types": [
+      {
+        "exists": false,
+        "dataType": "ENUM"
+      }
+    ],
+    "allowedTypes": [
+      "http://localhost:4444/v1/fax/receiveFaxStatus"
+    ],
+    "unique": false
+  }
+]

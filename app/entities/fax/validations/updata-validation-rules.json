@@ -1,0 +1,15 @@
+[
+  {
+    "name": "id",
+    "required": true,
+    "types": [
+      {
+        "exists": true,
+        "dataType": "NUMBER"
+      }
+    ],
+    "allowedTypes": [
+    ],
+    "unique": false
+  }
+]
